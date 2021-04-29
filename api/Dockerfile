@@ -7,7 +7,6 @@ COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install \
     && apt-get update \
     && apt-get install -y nodejs yarn
-    && npm install webpack -g
 COPY . /myapp
 # Add a script to be executed every time the container starts.
 # COPY entrypoint.sh /usr/bin/

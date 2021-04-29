@@ -8,7 +8,6 @@ import reportWebVitals from './reportWebVitals';
 // index.htmlの"id=root"にAppコンポーネントを描画する 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <User />
   </React.StrictMode>,
   document.getElementById('root')
